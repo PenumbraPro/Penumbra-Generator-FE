@@ -1,16 +1,16 @@
 {
-  "_from": "gen-tpl@latest",
-  "_id": "gen-tpl@0.0.9",
+  "_from": "@penumbra/generator-fel@latest",
+  "_id": "@penumbra/generator-fel@0.0.9",
   "_inBundle": false,
   "_integrity": "sha1-M22LYsXLX9FS/8wo5s1LHF1arCw=",
-  "_location": "/gen-tpl",
+  "_location": "/@penumbra/generator-fel",
   "_phantomChildren": {},
   "_requested": {
     "type": "tag",
     "registry": true,
-    "raw": "gen-tpl@latest",
-    "name": "gen-tpl",
-    "escapedName": "gen-tpl",
+    "raw": "@penumbra/generator-fel@latest",
+    "name": "@penumbra/generator-fel",
+    "escapedName": "@penumbra/generator-fel",
     "rawSpec": "latest",
     "saveSpec": null,
     "fetchSpec": "latest"
@@ -19,33 +19,33 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npm.taobao.org/gen-tpl/download/gen-tpl-0.0.9.tgz",
   "_shasum": "336d8b62c5cb5fd152ffcc28e6cd4b1c5d5aac2c",
-  "_spec": "gen-tpl@latest",
-  "_where": "C:\\Users\\归去来兮\\.maoda",
+  "_spec": "@penumbra/generator-fel@latest",
+  "_where": "C:\\Users\\归去来兮\\.penumbra",
   "author": {
     "name": "linbudu"
   },
   "bugs": {
-    "url": "https://github.com/imaoda/gen-tpl/issues"
+    "url": "https://github.com/linbudu599/Template-Test/issues"
   },
   "bundleDependencies": false,
   "dependencies": {
     "yeoman-generator": "^4.0.1"
   },
   "deprecated": false,
-  "description": "Generator For @penumbra/cli, includes GraphQL and Koa preset",
+  "description": "Frontend generator for @penumbra/cli, includes common templates",
   "keywords": [
     "cli",
-    "koa",
-    "generator",
-    "graphql"
+    "react",
+    "tsx",
+    "jsx",
+    "webpack"
   ],
   "license": "MIT",
   "main": "index.js",
-  "name": "@penumbra/koa-gql",
+  "name": "@penumbra/generator-fe",
   "repository": {
     "type": "git"
   },
-  "version": "0.1.0"
+  "version": "0.1.1"
 }
