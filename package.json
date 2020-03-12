@@ -1,6 +1,6 @@
 {
-  "_from": "@penumbra/generator-fel@latest",
-  "_id": "@penumbra/generator-fel@0.0.9",
+  "_from": "@penumbra/generator-fe@latest",
+  "_id": "@penumbra/generator-fe@0.1.1",
   "_inBundle": false,
   "_integrity": "sha1-M22LYsXLX9FS/8wo5s1LHF1arCw=",
   "_location": "/@penumbra/generator-fel",
@@ -8,8 +8,8 @@
   "_requested": {
     "type": "tag",
     "registry": true,
-    "raw": "@penumbra/generator-fel@latest",
-    "name": "@penumbra/generator-fel",
+    "raw": "@penumbra/generator-fe@latest",
+    "name": "@penumbra/generator-fe",
     "escapedName": "@penumbra/generator-fel",
     "rawSpec": "latest",
     "saveSpec": null,
@@ -35,11 +35,12 @@
   "deprecated": false,
   "description": "Frontend generator for @penumbra/cli, includes common templates",
   "keywords": [
-    "cli",
+    "generator",
     "react",
     "tsx",
     "jsx",
-    "webpack"
+    "webpack",
+    "parcel"
   ],
   "license": "MIT",
   "main": "index.js",
@@ -47,5 +48,5 @@
   "repository": {
     "type": "git"
   },
-  "version": "0.1.1"
+  "version": "0.1.2"
 }

@@ -1,13 +1,13 @@
 const Generator = require("yeoman-generator");
 const fs = require("fs");
 const path = require("path");
-module.exports = class extends Generator {
+class PeGenerator extends Generator {
   prompting() {
     return this.prompt([
       {
         type: "input",
         name: "appName",
-        message: "Project Name:",
+        message: "Project Name: ",
         validate(input) {
           if (!input) return "Please Enter Your Project Name";
           if (fs.readdirSync(".").includes(input)) {
@@ -18,31 +18,33 @@ module.exports = class extends Generator {
       },
       {
         type: "list",
-        choices: ["Javascript", "TypeScript"],
-        name: "language",
-        message: "Which language this time?",
-        default: "TypeScript"
+        choices: ["JS-React-Webpack", "TS-React-Parcel"],
+        name: "template",
+        message: "Which template this time?",
+        default: "JS-React-Webpack"
       }
     ]).then(answers => {
       this.answers = answers;
     });
   }
 
+  // notice diffrence between copy & copyTpl
   writing() {
-    const { language, appName } = this.answers;
+    const { template, appName } = this.answers;
     // coptTpl will replace <%= appName %> by Template Engine
+    // from to ctx
     this.fs.copyTpl(
-      // JvasScript/_package.json"
-      this.templatePath(language, "_package.json"),
+      // JvasScript/_package.json" -> cwd
+      this.templatePath(template, "_package.json"),
       this.destinationPath(appName, "package.json"),
       this.answers
     );
     // copy support file/file directory
-    fs.readdirSync(this.templatePath(language))
+    fs.readdirSync(this.templatePath(template))
       .filter(name => !name.startsWith("_"))
       .forEach(item => {
         this.fs.copy(
-          this.templatePath(language, item),
+          this.templatePath(template, item),
           this.destinationPath(appName, item)
         );
       });
@@ -69,4 +71,6 @@ module.exports = class extends Generator {
   end() {
     this.log("Enjoy Coding!");
   }
-};
+}
+
+module.exports = PeGenerator;
