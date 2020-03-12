@@ -1,0 +1,18 @@
+{
+  "presets": ["@babel/preset-react"],
+  "env": {
+    "dev": {
+      "plugins": [
+        ["react-transform", {
+          "transforms": [{
+            "transform": "react-transform-hmr",
+            "imports": ["react"],
+            "locals": ["module"]
+          }]
+        }],
+        ["lodash"],
+        ["react-hot-loader/babel"]
+      ]
+    }
+  }
+}
