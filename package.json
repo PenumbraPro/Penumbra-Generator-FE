@@ -1,16 +1,17 @@
 {
   "_from": "@penumbra/generator-fe@latest",
-  "_id": "@penumbra/generator-fe@0.1.1",
+  "_id": "@penumbra/generator-fe@0.1.3",
   "_inBundle": false,
-  "_integrity": "sha1-M22LYsXLX9FS/8wo5s1LHF1arCw=",
-  "_location": "/@penumbra/generator-fel",
+  "_integrity": "sha1-+f7ml2F8dOgD1iJJbFY01PvUgps=",
+  "_location": "/@penumbra/generator-fe",
   "_phantomChildren": {},
   "_requested": {
     "type": "tag",
     "registry": true,
     "raw": "@penumbra/generator-fe@latest",
     "name": "@penumbra/generator-fe",
-    "escapedName": "@penumbra/generator-fel",
+    "escapedName": "@penumbra%2fgenerator-fe",
+    "scope": "@penumbra",
     "rawSpec": "latest",
     "saveSpec": null,
     "fetchSpec": "latest"
@@ -19,17 +20,20 @@
     "#USER",
     "/"
   ],
-  "_shasum": "336d8b62c5cb5fd152ffcc28e6cd4b1c5d5aac2c",
-  "_spec": "@penumbra/generator-fel@latest",
-  "_where": "C:\\Users\\归去来兮\\.penumbra",
+  "_resolved": "https://registry.npm.taobao.org/@penumbra/generator-fe/download/@penumbra/generator-fe-0.1.3.tgz",
+  "_shasum": "f9fee697617c74e803d622496c5634d4fbd4829b",
+  "_spec": "@penumbra/generator-fe@latest",
+  "_where": "/Users/qiongxin/.penumbra",
   "author": {
     "name": "linbudu"
   },
   "bugs": {
-    "url": "https://github.com/linbudu599/Template-Test/issues"
+    "url": "https://github.com/linbudu599/Penumbra-Generator-FE/issues"
   },
   "bundleDependencies": false,
   "dependencies": {
+    "boxen": "^4.2.0",
+    "ora": "^5.1.0",
     "yeoman-generator": "^4.0.1"
   },
   "deprecated": false,
@@ -48,5 +52,5 @@
   "repository": {
     "type": "git"
   },
-  "version": "0.1.2"
+  "version": "0.1.3"
 }
